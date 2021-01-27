@@ -6,8 +6,8 @@ import schedule
 # because we only assign people tasks
 # in the first run)
 
-toan = vy = truong = tien = nhu = []
-array = [toan, vy, truong, tien, nhu]
+# toan = vy = truong = tien = nhu = []
+# array = [toan, vy, truong, tien, nhu]
 
 
 class Person:
@@ -84,7 +84,7 @@ def main():
 if __name__ == "__main__":
     run = 0
     array = [0] * 5
-    schedule.every().monday.at("08:00").do(main)
+    schedule.every().wednesday.at("09:17").do(main)
     while True:
         schedule.run_pending()
         time.sleep(1)
